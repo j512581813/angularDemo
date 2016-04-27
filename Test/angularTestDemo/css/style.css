@@ -1,0 +1,303 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color:
+}
+
+input {
+	margin-bottom: 0;
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+a {
+	text-decoration: none;
+	color: #007aff;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+img {
+	width: 100%;
+	outline-width: 0px;
+}
+
+.hg10 {
+	height: 10px;
+	background: #F5F5F5;
+	width: 100%;
+}
+
+.login-wrap {
+	padding-top: 44px;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+
+.login-wrap .content {
+	margin-top: 20px;
+	position: relative;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+}
+
+.login-wrap .content::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc
+}
+
+.login-input-row {
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.login-input-row::after {
+	position: absolute;
+	bottom: 0;
+	border-bottom: 1px solid #ccc;
+	height: 1px;
+	left: 15px;
+	right: 0;
+	content: "";
+	transform: rotateY(.5);
+	-webkit-transform: rotateY(.5);
+	-moz-transform: rotateY(.5);
+	background: #c8c7cc;
+}
+
+.login-input-row label {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.1;
+	float: left;
+	width: 20%;
+	padding: 10px 15px;
+	font-weight: normal;
+}
+
+.login-input-row .rd_1 {
+	width: 80%;
+	float: left;
+}
+
+.btn_wrap {
+	margin: 25px 10px 10px 10px;
+}
+
+.btn_wrap::before {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.btn_wrap .btn-s2 {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.btn_wrap .link-area {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.new-content,
+.main-wrap {
+	padding: 0 .8rem;
+}
+
+.new-wrap {
+	width: 100%;
+}
+
+.new-wrap h3 {
+	background: url(../image/newIcon.png) no-repeat left center;
+	text-indent: 10%;
+	background-size: 7%;
+	height: 2rem;
+	line-height: 2rem;
+	border-bottom: 1px solid #eee;
+	font-size: 1rem;
+}
+
+.new-wrap .more {
+	color: #999;
+	font-size: .8rem;
+}
+
+.new-wrap .new-list li p {
+	width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.new-wrap .new-list li {
+	border-bottom: 1px solid #eee;
+	padding: .3rem 0;
+}
+
+.new-wrap .new-list li a,
+.main-wrap .book-list li a {
+	color: #999;
+	font-size: 0.8rem;
+}
+
+.main-wrap h3 {
+	background: url(../image/book.png) no-repeat left center;
+	background-size: 7%;
+}
+
+.main-wrap .book-list li {
+	padding: .5rem 0;
+	border-bottom: 1px solid #eee;
+}
+
+.main-wrap .book-list li img {
+	width: 45%;
+	float: left;
+}
+
+.main-wrap .book-list li p {
+	float: left;
+	margin-left: 10px;
+}
+
+.main-wrap .book-list li::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.main-wrap .book-list li .name {
+	color: #000;
+	font-size: .8rem;
+	font-weight: bold;
+	width: -moz-calc(55%- 10px);
+	width: -webkit-calc(55% - 10px);
+	width: calc(55% - 10px);
+}
+
+.main-wrap .book-list li .intro {
+	height: 4rem;
+	overflow: hidden;
+	width: 52%;
+	position: relative;
+}
+
+.main-wrap .book-list li .intro::after {
+	content: "....";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: -4px;
+	padding: 0 0 4px 10px;
+}
+
+.main-wrap .book-list li .intro:after {
+	content: "....";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: -4px;
+	padding: 0 0 4px 10px;
+}
+
+.main-wrap .book-list li .book_time {
+	display: block;
+}

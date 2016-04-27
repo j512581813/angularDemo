@@ -1,0 +1,25 @@
+		<div>
+			<div class="bar bar-header  bar-light">
+				<h1 class="title">登录界面</h1>
+			</div>
+			<div class="login-wrap">
+				<div class="content">
+					<div class="login-input-row user-wrap">
+						<label>账号</label>
+						<input type="text" class="rd_1" placeholder="请输入您的账号" ng-model="user.account"  required/>
+					</div>
+					<div class="login-input-row psd-wrap">
+						<label>密码</label>
+						<input type="password" class="rd_1" placeholder="请输入您的密码" ng-model="user.password" required/>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button class="button button-positive btn-s2" ng-click="loginAction()">登录</button>
+					<div class="link-area">
+						<a href="javascript:void(0)">注册账号</a>
+						<span>|</span>
+						<a href="javascript:void(0)">忘记密码</a>
+					</div>
+				</div>
+			</div>
+		</div>
