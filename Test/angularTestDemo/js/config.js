@@ -14,5 +14,10 @@ greatWall.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: "tpl/new.html",
 			controller: "newCtrl"
 		})
+		.state('/newdetail/:type',{
+			url:'/newdetail/:type',
+			templateUrl:"tpl/newdetail.html",
+			controller:'newDetailCtrl'
+		})
 });
 

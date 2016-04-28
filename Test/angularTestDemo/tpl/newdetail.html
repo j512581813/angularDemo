@@ -1,0 +1,19 @@
+<div class="detail-content">
+	<header>
+		<a class="back" ng-click="back()"></a>
+		<h2>{{book.maintitle}}</h2></header>
+	<div class="main-title">
+		<h2>{{book.title}}</h2>
+		<p>{{book.author}}<span class="time">{{book.date_modify}}</span></p>
+	</div>
+	<div class="main-contet">
+		<img ng-src="image/{{book.image}}" />
+		<p>{{book.content}}</p>
+	</div>
+	<div class="new-wrapper">
+		<h3>新闻摘要</h3>
+		<ul>
+			<li ng-repeat="new in news"><a href="javasrcipt:void(0)"><p class="fl">{{new.title}}</p><span class="fr">{{new.time}}</span></a></li>
+		</ul>
+	</div>
+</div>

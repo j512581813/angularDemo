@@ -102,6 +102,7 @@ summary {
 	font-weight: normal;
 	vertical-align: baseline;
 	background: transparent;
+	    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
 }
 
 img {
@@ -301,3 +302,21 @@ img {
 .main-wrap .book-list li .book_time {
 	display: block;
 }
+.detail-content header{ height:40px; line-height: 40px; background: #930000; width: 100%; }
+.detail-content header h2{margin: 0 auto; height: 40px; line-height: 40px; color: #FFF; width: 140px; text-align: center;}
+.detail-content .back{ width:40px ; height: 40px; display: block; float: left; background: url(../image/back_normal.png) left center no-repeat; background-size:75%;}
+.detail-content .main-title{ margin-top: 0.5rem; width: 100%; text-align: center;}
+.detail-content .main-title p{ font-size: 0.8rem; color: red; width:100% ; text-align: right; padding-right: 30px;}
+.detail-content .main-title .time{ margin-left: 10px;}
+.detail-content .main-contet,.detail-content  .new-wrapper ul{ margin: 0.5rem; }
+.detail-content .main-contet p{    font-size: 0.8rem;
+    text-align: justify;
+    color: #555;
+    text-indent: 20px;}
+.detail-content  .new-wrapper h3{    background:#f4f4f4 url(../image/note.png) 1% center no-repeat;width: 100%; height: 30px; line-height: 30px; text-indent:8%;background-size: 5%;}
+.detail-content  .new-wrapper p{ 	width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;}
+.detail-content  .new-wrapper li a{ color: #666; font-size: 0.8rem;}
+.detail-content  .new-wrapper li{ height: 25px; line-height: 25px; border-bottom: 1px solid #EEE;}

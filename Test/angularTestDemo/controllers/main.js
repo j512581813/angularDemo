@@ -1,3 +1,4 @@
  var controllers = angular.module("controllers", [
-     "LoginCtrl","newCtrl"
+     "LoginCtrl","newCtrl",'newDetailCtrl'
+     
    ]);

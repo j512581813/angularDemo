@@ -5,7 +5,7 @@
 			<h3>新闻摘要<a href="javascript:void(0)" class="more fr">更多></a></h3>
 			<div class="new-list">
 				<ul ng-repeat="new in news">
-					<li><a><span class="fr">{{new.meta.date_create}}</span><p>{{new.meta.title}}</p></a></li>
+					<li ng-click="clickSubType(new.meta.maintitle,new.meta.id)"><a><span class="fr">{{new.meta.date_create}}</span><p>{{new.meta.title}}</p></a></li>
 				</ul>
 			</div>
 		</div>
@@ -15,7 +15,7 @@
 			<div class="book-list">
 				<ul ng-repeat="book in books">
 					<li>
-						<a href="javascript:void(0)">
+						<a href="javascript:void(0)" ng-click="clickSubType(book.lists.maintitle,book.lists.id)">
 							<img ng-src="image/{{book.lists.image}}">
 							<p class="name">{{book.lists.author}}<span class="book_time fr">{{book.lists.time}}</span></p>
 							<p class="intro">{{book.lists.intro}}</p>

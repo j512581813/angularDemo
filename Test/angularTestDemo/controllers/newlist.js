@@ -16,6 +16,7 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 				"微信",
 				"开发文档"
 			],
+			'maintitle':'new',
 			"title": "微信页面整合",
 			"id": '1'
 		}
@@ -29,6 +30,7 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 			"subdir": "article",
 			"subtitle": null,
 			"tags": [],
+			'maintitle':'new',
 			"title": "我想那悲伤的秋千总有微风陪伴，孤寂的夜，总有繁星点点，蓦然回首，而你却是不在我身边。",
 			"id": '2'
 		}
@@ -46,8 +48,9 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 				"微信",
 				"开发文档"
 			],
+			'maintitle':'new',
 			"title": "我们一生去经历一次的青春，目的就只是去听一次花开的声音，看一次花落的寂然，然后散场。",
-			"id": '1'
+			"id": '3'
 		}
 	}, {
 		"meta": {
@@ -59,14 +62,17 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 			"subdir": "article",
 			"subtitle": null,
 			"tags": [],
+			'maintitle':'new',
 			"title": "python2编码问题",
-			"id": '2'
+			"id": '4'
 		}
 	}
 	];
 	$scope.books = [
 	{
 		"lists":{
+			'maintitle':'book',
+			"id": '4',
 			"image":"book-pic.jpg",
 			"author":"刘同",
 			"title":"谁的青春不迷茫",
@@ -78,6 +84,8 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 		
 	},	{
 		"lists":{
+			'maintitle':'book',
+			"id": '5',
 			"image":"book-pic.jpg",
 			"author":"刘同",
 			"title":"谁的青春不迷茫",
@@ -89,6 +97,8 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 		
 	},	{
 		"lists":{
+			'maintitle':'book',
+			"id": '6',
 			"image":"book-pic.jpg",
 			"author":"刘同",
 			"title":"谁的青春不迷茫",
@@ -100,4 +110,12 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 		
 	}
 	]
+	$scope.clickSubType = function(mainTitle,id){
+		if(mainTitle =="new"){
+			$location.url("/newdetail/"+ id);
+		}else if(mainTitle=="book"){
+
+			console.log(id);
+		}
+	}
 }])
