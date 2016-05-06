@@ -114,8 +114,14 @@ newlistCtrl.controller('newCtrl', ["$scope","$timeout", "$location", function($s
 		if(mainTitle =="new"){
 			$location.url("/newdetail/"+ id);
 		}else if(mainTitle=="book"){
-
 			console.log(id);
 		}
-	}
+	};
+	$scope.goToNewList = function(){
+		$location.url('newlist');
+	};
+	$scope.goToSearch = function(){
+		$location.url('newlist');
+	};
+
 }])

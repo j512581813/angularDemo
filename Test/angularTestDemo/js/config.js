@@ -1,6 +1,4 @@
-
-
-var greatWall = angular.module('DemoApp', ['ui.router',"ngAnimate","ngTouch","controllers"]);
+var greatWall = angular.module('DemoApp', ['ui.router', "ngAnimate", "ngTouch", "controllers"]);
 greatWall.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('login');
 	$stateProvider
@@ -14,10 +12,19 @@ greatWall.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: "tpl/new.html",
 			controller: "newCtrl"
 		})
-		.state('/newdetail/:type',{
-			url:'/newdetail/:type',
-			templateUrl:"tpl/newdetail.html",
-			controller:'newDetailCtrl'
+		.state('/newdetail/:type', {
+			url: '/newdetail/:type',
+			templateUrl: "tpl/newdetail.html",
+			controller: 'newDetailCtrl'
+		})
+		.state('newlist', {
+			url: '/newlist',
+			templateUrl: 'tpl/newlist.html',
+			controller: 'newListCtrl'
+		})
+		.state('register', {
+			url: '/register',
+			templateUrl: 'tpl/register.html',
+			controller: 'registerCtrl'
 		})
 });
-

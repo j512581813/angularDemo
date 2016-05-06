@@ -27,7 +27,9 @@ newDetail.controller('newDetailCtrl',['$scope','$location','$window',function($s
 		$scope.back = function(){
 			if($loction.url().match('type')){
 				navigator.control.back();
+				
 			}else{
+				console.log(2);
 				$window.history.back();
 			}
 		}

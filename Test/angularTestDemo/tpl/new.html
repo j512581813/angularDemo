@@ -2,7 +2,7 @@
 	<div class="new-wrap">
 		<div class="banner"><img ng-src="{{banner}}"></div>
 		<div class="new-content">
-			<h3>新闻摘要<a href="javascript:void(0)" class="more fr">更多></a></h3>
+			<h3>新闻摘要<a href="javascript:void(0)" class="more fr" ng-click="goToNewList()">更多></a></h3>
 			<div class="new-list">
 				<ul ng-repeat="new in news">
 					<li ng-click="clickSubType(new.meta.maintitle,new.meta.id)"><a><span class="fr">{{new.meta.date_create}}</span><p>{{new.meta.title}}</p></a></li>
@@ -11,7 +11,7 @@
 		</div>
 		<div class="hg10"></div>
 		<div class="main-wrap">
-			<h3>优秀名著(推荐)<a href="javascript:void(0)" class="more fr">更多></a></h3>
+			<h3>优秀名著(推荐)<a href="javascript:void(0)" class="more fr" ng-click="goToSearch()">更多></a></h3>
 			<div class="book-list">
 				<ul ng-repeat="book in books">
 					<li>

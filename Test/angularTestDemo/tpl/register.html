@@ -1,0 +1,38 @@
+<div class="resgiter">
+	<div class="header">
+		<header>
+			<a href="javascript:void(0)" class="back" ng-click="back"></a>
+			<h2>注册账号</h2>
+		</header>
+	</div>
+	<form name="MyForm">
+		<div class="com_tb_wrap user-name">
+			<label>用户名</label>
+			<input type="text" ng-focus="" placeholder="请输入您的用户名" id="name" ng-model="user.name" required />
+		</div>
+		<div class="com_tb_wrap user-password">
+			<label>密码</label>
+			<input type="password" placeholder="请输入您的密码" id="pwd" ng-model="user.pwd" required />
+		</div>
+		<div class="com_tb_wrap user-pwd">
+			<label>确认密码</label>
+			<input type="password" placeholder="请再次输入您的密码" id="pwd1" ng-model="user.pwd1" required/>
+		</div>
+		<div class="com_tb_wrap user-email">
+			<label>邮箱</label>
+			<input type="email" placeholder="请输入您的游戏" id="email" ng-model="user.email" required/>
+		</div>
+		<div class="com_tb_wrap user-phone">
+			<label>手机号码</label>
+			<input type="tel" placeholder="请输入您的手机号码" id="phone" ng-model="user.phone" required/>
+		</div>
+		<div class="com_tb_wrap user-num">
+			<label>验证码</label>
+			<input type="text" ng-model="user.num" id="num" placeholder="请输入您的验证码" required />
+			<button class="button button-positive num">获取验证码</button>
+		</div>
+		<div class="btn-wrap">
+			<button type="submit" class="button button-positive btn-s3" ng-click="getData()">确认</button>
+		</div>
+	</form>
+</div>

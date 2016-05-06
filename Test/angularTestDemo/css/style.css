@@ -102,7 +102,7 @@ summary {
 	font-weight: normal;
 	vertical-align: baseline;
 	background: transparent;
-	    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
 }
 
 img {
@@ -277,7 +277,7 @@ img {
 .main-wrap .book-list li .intro {
 	height: 4rem;
 	overflow: hidden;
-	width: 52%;
+	width: 50%;
 	position: relative;
 }
 
@@ -302,21 +302,205 @@ img {
 .main-wrap .book-list li .book_time {
 	display: block;
 }
-.detail-content header{ height:40px; line-height: 40px; background: #930000; width: 100%; }
-.detail-content header h2{margin: 0 auto; height: 40px; line-height: 40px; color: #FFF; width: 140px; text-align: center;}
-.detail-content .back{ width:40px ; height: 40px; display: block; float: left; background: url(../image/back_normal.png) left center no-repeat; background-size:75%;}
-.detail-content .main-title{ margin-top: 0.5rem; width: 100%; text-align: center;}
-.detail-content .main-title p{ font-size: 0.8rem; color: red; width:100% ; text-align: right; padding-right: 30px;}
-.detail-content .main-title .time{ margin-left: 10px;}
-.detail-content .main-contet,.detail-content  .new-wrapper ul{ margin: 0.5rem; }
-.detail-content .main-contet p{    font-size: 0.8rem;
-    text-align: justify;
-    color: #555;
-    text-indent: 20px;}
-.detail-content  .new-wrapper h3{    background:#f4f4f4 url(../image/note.png) 1% center no-repeat;width: 100%; height: 30px; line-height: 30px; text-indent:8%;background-size: 5%;}
-.detail-content  .new-wrapper p{ 	width: 80%;
+
+.detail-content header,
+.new-lists .header header,
+.resgiter .header header {
+	height: 40px;
+	line-height: 40px;
+	background: #930000;
+	width: 100%;
+}
+
+.detail-content header h2,
+.new-lists .header header h2,
+.resgiter header h2 {
+	margin: 0 auto;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	width: 140px;
+	text-align: center;
+}
+
+.detail-content .back,
+.new-lists .header .back,
+.resgiter .header .back {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	background: url(../image/back_normal.png) left center no-repeat;
+	background-size: 75%;
+}
+
+.detail-content .main-title {
+	margin-top: 0.5rem;
+	width: 100%;
+	text-align: center;
+}
+
+.detail-content .main-title p {
+	font-size: 0.8rem;
+	color: red;
+	width: 100%;
+	text-align: right;
+	padding-right: 30px;
+}
+
+.detail-content .main-title .time {
+	margin-left: 10px;
+}
+
+.detail-content .main-contet,
+.detail-content .new-wrapper ul {
+	margin: 0.5rem;
+}
+
+.detail-content .main-contet p {
+	font-size: 0.8rem;
+	text-align: justify;
+	color: #555;
+	text-indent: 20px;
+}
+
+.detail-content .new-wrapper h3 {
+	background: #f4f4f4 url(../image/note.png) 1% center no-repeat;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	text-indent: 8%;
+	background-size: 5%;
+}
+
+.detail-content .new-wrapper p {
+	width: 80%;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;}
-.detail-content  .new-wrapper li a{ color: #666; font-size: 0.8rem;}
-.detail-content  .new-wrapper li{ height: 25px; line-height: 25px; border-bottom: 1px solid #EEE;}
+	white-space: nowrap;
+}
+
+.detail-content .new-wrapper li a {
+	color: #666;
+	font-size: 0.8rem;
+}
+
+.detail-content .new-wrapper li {
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 1px solid #EEE;
+}
+
+.new-lists .list_wrapper li {
+	position: relative;
+	border-bottom: 1px solid #eee;
+	padding: 0.5rem;
+}
+
+.new-lists .list_wrapper li::after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.new-lists .list_wrapper .new-img {
+	width: 30%;
+	margin-right: 5px;
+}
+
+.new-lists .list_wrapper .new-title {
+	width: 68%;
+	float: left;
+	height: 4rem;
+	overflow: hidden;
+	color: #666;
+	font-size: .9rem;
+	text-align: justify;
+}
+
+.new-lists .list_wrapper .new-time {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	display: block;
+}
+
+.new-lists .serach-wrap {
+	padding: 0 .5rem;
+}
+
+.new-lists .serach-wrap .serach-mid {
+	border: 2px solid red;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.new-lists .serach-wrap .serach-mid .icon {
+	width: 40px;
+	height: 40px;
+	background: url(../image/search.png) 50% center no-repeat;
+	display: block;
+	background-size: 60%;
+}
+
+.new-lists .serach-wrap .serach-mid .search-name {
+	width: 80%;
+	float: left;
+	padding: .5rem 0;
+	height: 35px;
+	line-height: 35px;
+}
+
+.resgiter .com_tb_wrap {
+	padding: 4px;
+	width: 100%;
+	overflow: hidden;
+	height: 3rem;
+	border-bottom: 1px solid #EEE;
+}
+
+.resgiter .com_tb_wrap label {
+	width: 90px;
+	float: left;
+	padding: 7px 10px;
+}
+
+.resgiter .com_tb_wrap input {
+	width: -moz-calc(100%- 140px);
+	width: -webkit-calc(100% - 140px);
+	width: calc(100% - 140px);
+	float: left;
+}
+
+.resgiter .btn-wrap {
+	margin-top: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.resgiter .btn-wrap .btn-s3 {
+	width: 90%;
+	background: #930000;
+	margin: 0 auto;
+	border-color: #930000;
+	box-shadow: 0 0 4px 0px #000;
+	display: block;
+}
+
+.resgiter .user-num input {
+	width: 36%;
+	float: left;
+}
+
+.resgiter .user-num button {
+	width: 35%;
+	float: right;
+	display: block;
+	min-height: 35px;
+	line-height: 35px;
+	max-height:40px;
+}

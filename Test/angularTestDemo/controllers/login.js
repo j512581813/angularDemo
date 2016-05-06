@@ -6,5 +6,8 @@ loginCtrl.controller('LoginCtrl', ["$scope", "$location", function($scope, $loca
 		} else {
 			alert("您输入的账号或密码错误！");
 		}
+	};
+	$scope.register = function(){
+			$location.url("register");
 	}
 }])
