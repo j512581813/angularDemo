@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<style>
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+				overflow: hidden
+			}
+			
+			#content {
+				position: relative;
+				margin: 0 auto;
+				overflow: hidden
+			}
+			
+			#blur {
+				position: absolute;
+				margin: 0 auto;
+				left: 0;
+				top: 0;
+				filter: blur(10px);
+				-webkit-filter: blur(18px);
+				-moz-filter: blur(18px);
+				-ms-filter: blur(18px);
+				-o-filter: blur(18px);
+				z-index: 0;
+				display: block
+			}
+			
+			#canvas {
+				position: absolute;
+				margin: 0 auto;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				display: block
+			}
+			
+			.button {
+				padding: 5px 10px;
+				color: #fff;
+				position: absolute;
+				display: block;
+				text-align: center;
+				border-radius: 4px;
+				text-decoration: none;
+				z-index: 3
+			}
+			
+			#button-reset {
+				left: 10%;
+				bottom: 5%;
+				background-color: red
+			}
+			
+			#button-show {
+				right: 10%;
+				bottom: 5%;
+				background-color: green
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="content">
+			<!--模糊图片-->
+			<img id="blur" src="image/p_001.jpg">
+			<!--使用canvas绘制图片-->
+			<canvas id="canvas"></canvas>
+			<a href="javascript:reset()" rel="external nofollow" class="button" id="button-reset">查看</a>
+			<a href="javascript:kan()" rel="external nofollow" class="button" id="button-show">立即看全图</a>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/seePic.js"></script>
+	</body>
+
+</html>
